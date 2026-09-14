@@ -60,12 +60,12 @@ export default function AboutSection() {
             </div>
 
             {/* Profile photo */}
-            <div className="relative w-36 h-36 rounded-full overflow-hidden border-4 border-[#1a2333] shadow-[0_0_25px_rgba(0,240,255,0.3)]">
+            <div className="relative w-44 h-44 rounded-full overflow-hidden border-4 border-[#1a2333] shadow-[0_0_25px_rgba(0,240,255,0.3)]">
               <Image
                 src="/profile.jpg"
                 alt="Mangesh Sambare"
                 fill
-                sizes="144px"
+                sizes="176px"
                 className="object-cover"
               />
             </div>
