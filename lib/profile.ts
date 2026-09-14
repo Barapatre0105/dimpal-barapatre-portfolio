@@ -5,7 +5,6 @@ export interface Profile {
   yearsOfExperience: number;
   bio: string;
   email: string;
-  phone: string;
   linkedin: string;
   github: string;
 }
