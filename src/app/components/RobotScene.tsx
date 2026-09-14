@@ -59,9 +59,9 @@ function Tendril({ dir, u, v, phase, freq, amp, radius, points, color }: any) {
       synapseRef.current.scale.set(scale, scale, scale);
     }
   });
-
   return (
     <group>
+      {/* @ts-ignore - R3F line type conflicts with SVG line in Next.js */}
       <line geometry={geometry}>
         <lineBasicMaterial 
           color={color} 
