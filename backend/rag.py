@@ -9,19 +9,20 @@ import pypdf
 CHROMA_DATA_PATH = os.path.join(os.path.dirname(__file__), "chroma_data")
 client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
 
-# Use Gemini API for embeddings to save RAM on Render
-print("Configuring Gemini API Embedding Function...")
-gemini_key = os.getenv("GEMINI_API_KEY")
-gemini_ef = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
-    api_key=gemini_key
+# Use HuggingFace API for embeddings to save RAM on Render
+print("Configuring HuggingFace API Embedding Function...")
+hf_token = os.getenv("HUGGINGFACE_API_KEY")
+huggingface_ef = embedding_functions.HuggingFaceEmbeddingFunction(
+    api_key=hf_token,
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 print("Embedding Function Configured.")
 
 def get_or_create_collection(name="portfolio_collection"):
-    return client.get_or_create_collection(name=name, embedding_function=gemini_ef)
+    return client.get_or_create_collection(name=name, embedding_function=huggingface_ef)
 
 def get_or_create_pdf_collection():
-    return client.get_or_create_collection(name="uploaded_pdf_collection", embedding_function=gemini_ef)
+    return client.get_or_create_collection(name="uploaded_pdf_collection", embedding_function=huggingface_ef)
 
 def extract_text_from_ts(filepath):
     """Simple extractor to grab strings from the TS data files."""
@@ -67,22 +68,29 @@ def initialize_rag():
                 metadatas.append({"source": "mangesh_portfolio.txt"})
             
     if docs:
-        print(f"Embedding {len(docs)} chunks into ChromaDB from text file via Gemini API...")
-        collection.add(
-            documents=docs,
-            metadatas=metadatas,
-            ids=ids
-        )
-        print("RAG content successfully loaded into ChromaDB from text file!")
+        print(f"Embedding {len(docs)} chunks into ChromaDB from text file via HuggingFace API...")
+        try:
+            collection.add(
+                documents=docs,
+                metadatas=metadatas,
+                ids=ids
+            )
+            print("RAG content successfully loaded into ChromaDB from text file!")
+        except Exception as e:
+            print(f"WARNING: Hugging Face API blocked locally. Backend will boot but RAG may fail. Error: {e}")
 
 def query_rag(query_text: str, n_results: int = 2):
     collection = get_or_create_collection()
     
-    # Return 2 most relevant chunks
-    results = collection.query(
-        query_texts=[query_text],
-        n_results=n_results
-    )
+    try:
+        # Return 2 most relevant chunks
+        results = collection.query(
+            query_texts=[query_text],
+            n_results=n_results
+        )
+    except Exception as e:
+        print(f"WARNING: Query failed due to API block. Error: {e}")
+        return ""
     
     # Combine retrieved documents
     context = ""
@@ -115,11 +123,15 @@ def ingest_pdf(pdf_path: str):
                 ids.append(f"page{page_num}_{i}")
                 
     if docs:
-        collection.add(
-            documents=docs,
-            ids=ids
-        )
-        return len(docs)
+        try:
+            collection.add(
+                documents=docs,
+                ids=ids
+            )
+            return len(docs)
+        except Exception as e:
+            print(f"WARNING: PDF upload embeddings failed. Error: {e}")
+            return 0
     return 0
 
 def query_pdf_rag(query_text: str, n_results: int = 3):
@@ -127,10 +139,14 @@ def query_pdf_rag(query_text: str, n_results: int = 3):
     if collection.count() == 0:
         return ""
     
-    results = collection.query(
-        query_texts=[query_text],
-        n_results=n_results
-    )
+    try:
+        results = collection.query(
+            query_texts=[query_text],
+            n_results=n_results
+        )
+    except Exception as e:
+        print(f"WARNING: Query failed due to API block. Error: {e}")
+        return ""
     
     context = ""
     if results and 'documents' in results and results['documents']:
