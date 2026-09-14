@@ -6,7 +6,7 @@ import axios from "axios";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Activity, MessageSquare, Settings, FileText, HelpCircle, LogOut } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 const mockTrendData = [
   { name: 'Sun', score: 0.5 },

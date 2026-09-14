@@ -32,7 +32,8 @@ export default function ChatBot() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8000/chat", { message: userMsg });
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const res = await axios.post(`${API_URL}/chat`, { message: userMsg });
       setMessages(prev => [...prev, { role: "bot", content: res.data.reply }]);
     } catch (err) {
       setMessages(prev => [...prev, { role: "bot", content: "Sorry, my backend is currently unreachable. Please try again later." }]);
