@@ -8,46 +8,47 @@ EXPERIENCE
 Data Science Trainer
 SkillEcted by JSSAV Edu. Pvt. Ltd.
 Jan 2026 – Present
-Delivered instructor-led training in Python, SQL, Advanced Excel, Power BI, Tableau, Statistics, Machine Learning, Deep Learning, NLP, Transformers, and Generative AI.
-Mentored 200+ students by providing technical guidance, resolving complex coding issues, and supporting end-to-end project development.
-Guided learners in building real-world AI solutions, including LLMs, RAG applications, AI Chatbots, Predictive Analytics, Recommendation Systems, and Machine Learning models.
-Conducted technical enablement sessions for Sales and Business Development teams on Data Analytics, Business Analytics, AI, and Data Science solutions.
-Designed hands-on assignments, capstone projects, coding assessments, and interview preparation programs to develop industry-ready Data Science professionals.
+- Delivered instructor-led training in Python, SQL, Advanced Excel, Power BI, Tableau, Statistics, Machine Learning, Deep Learning, NLP, Transformers, and Generative AI.
+- Mentored 200+ students by providing technical guidance, resolving complex coding issues, and supporting end-to-end project development.
+- Guided learners in building real-world AI solutions, including LLMs, RAG applications, AI Chatbots, Predictive Analytics, Recommendation Systems, and Machine Learning models.
+- Conducted technical enablement sessions for Sales and Business Development teams on Data Analytics, Business Analytics, AI, and Data Science solutions.
+- Designed hands-on assignments, capstone projects, coding assessments, and interview preparation programs to develop industry-ready Data Science professionals.
+- Conducted numerous technical seminars and hands-on workshops across various colleges, sharing industry insights and training students on emerging AI, Machine Learning, and Data Science technologies.
 
 Junior Data Scientist & Project Mentor
 Affordable AI Technology
 Aug 2024 – Oct 2025
-Led client-based AI and Data Science projects involving NLP, Time Series Forecasting, and Data Visualization, delivering actionable applications and dashboards to improve business insights and sales performance.
-Acted as a Project Trainer, mentoring new employees on Python, SQL, Machine Learning, and deployment workflows for live projects.
-Designed and deployed an AI-powered Healthcare Chatbot to automate query handling and enhance patient interaction efficiency.
+- Led client-based AI and Data Science projects involving NLP, Time Series Forecasting, and Data Visualization, delivering actionable applications and dashboards to improve business insights and sales performance.
+- Acted as a Project Trainer, mentoring new employees on Python, SQL, Machine Learning, and deployment workflows for live projects.
+- Designed and deployed an AI-powered Healthcare Chatbot to automate query handling and enhance patient interaction efficiency.
 
 Data Analytics Intern
 Softronix Software Services Pvt. Ltd.
 Aug 2023 – Mar 2024
-Automated Flipkart product data extraction using Selenium, BeautifulSoup, and ChromeDriver, reducing manual collection efforts by 90%.
-Designed and implemented a Flask-based data pipeline for automated data ingestion, preprocessing, and analysis, improving efficiency by 60%.
-Developed Excel-based dashboards and visual reports to monitor product performance and business KPIs.
+- Automated Flipkart product data extraction using Selenium, BeautifulSoup, and ChromeDriver, reducing manual collection efforts by 90%.
+- Designed and implemented a Flask-based data pipeline for automated data ingestion, preprocessing, and analysis, improving efficiency by 60%.
+- Developed Excel-based dashboards and visual reports to monitor product performance and business KPIs.
 
 PROJECTS
 AI Healthcare Chatbot (LLM-Based)
-Developed an intelligent healthcare assistant using NLP and transformer-based architecture.
-Deployed using FastAPI for real-time interaction.
-Integrated database for conversation logging and analytics.
+- Developed an intelligent healthcare assistant using NLP and transformer-based architecture.
+- Deployed using FastAPI for real-time interaction.
+- Integrated database for conversation logging and analytics.
 
 Fashion Item Classification using CNN
-Developed a deep learning model using Convolutional Neural Networks (CNN) to classify fashion images from the Fashion MNIST dataset.
-Achieved 92% test accuracy.
-Utilized techniques like data normalization, dropout regularization, and ReLU activation to optimize model performance.
+- Developed a deep learning model using Convolutional Neural Networks (CNN) to classify fashion images from the Fashion MNIST dataset.
+- Achieved 92% test accuracy.
+- Utilized techniques like data normalization, dropout regularization, and ReLU activation to optimize model performance.
 
 Sentiment Analysis on E-commerce Reviews
-Developed an LSTM-based deep learning model to classify product reviews.
-Achieved 92.5% test accuracy on a dataset of 3,000+ labeled reviews.
-Integrated the model with a Flask web app for real-time sentiment predictions via user input.
+- Developed an LSTM-based deep learning model to classify product reviews.
+- Achieved 92.5% test accuracy on a dataset of 3,000+ labeled reviews.
+- Integrated the model with a Flask web app for real-time sentiment predictions via user input.
 
 Flipkart Product Feedback Analysis Project
-Scraped 5,000+ product reviews and ratings from Flipkart to analyze customer feedback.
-Performed sentiment analysis using LSTM to determine product perception and customer satisfaction levels.
-Delivered actionable insights for product strategy.
+- Scraped 5,000+ product reviews and ratings from Flipkart to analyze customer feedback.
+- Performed sentiment analysis using LSTM to determine product perception and customer satisfaction levels.
+- Delivered actionable insights for product strategy.
 
 EDUCATION
 Master of Science (Electronics)
