@@ -6,12 +6,14 @@ import os
 import requests
 import google.generativeai as genai
 from dotenv import load_dotenv
+import os
+
+# Load environment variables FIRST before importing local modules
+load_dotenv()
+
 from rag import initialize_rag, query_rag, ingest_pdf, query_pdf_rag
 import tempfile
 import shutil
-
-# Load environment variables
-load_dotenv()
 
 app = FastAPI(title="Mangesh Sambare AI Portfolio Backend")
 

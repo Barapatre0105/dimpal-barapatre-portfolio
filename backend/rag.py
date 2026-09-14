@@ -9,20 +9,19 @@ import pypdf
 CHROMA_DATA_PATH = os.path.join(os.path.dirname(__file__), "chroma_data")
 client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
 
-# Use HuggingFace API for embeddings to save RAM on Render
-print("Configuring HuggingFace API Embedding Function...")
-hf_token = os.getenv("HUGGINGFACE_API_KEY")
-huggingface_ef = embedding_functions.HuggingFaceEmbeddingFunction(
-    api_key=hf_token,
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+# Use Gemini API for embeddings to save RAM on Render
+print("Configuring Gemini API Embedding Function...")
+gemini_key = os.getenv("GEMINI_API_KEY")
+gemini_ef = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
+    api_key=gemini_key
 )
 print("Embedding Function Configured.")
 
 def get_or_create_collection(name="portfolio_collection"):
-    return client.get_or_create_collection(name=name, embedding_function=huggingface_ef)
+    return client.get_or_create_collection(name=name, embedding_function=gemini_ef)
 
 def get_or_create_pdf_collection():
-    return client.get_or_create_collection(name="uploaded_pdf_collection", embedding_function=huggingface_ef)
+    return client.get_or_create_collection(name="uploaded_pdf_collection", embedding_function=gemini_ef)
 
 def extract_text_from_ts(filepath):
     """Simple extractor to grab strings from the TS data files."""
@@ -68,7 +67,7 @@ def initialize_rag():
                 metadatas.append({"source": "mangesh_portfolio.txt"})
             
     if docs:
-        print(f"Embedding {len(docs)} chunks into ChromaDB from text file via HuggingFace API...")
+        print(f"Embedding {len(docs)} chunks into ChromaDB from text file via Gemini API...")
         collection.add(
             documents=docs,
             metadatas=metadatas,
