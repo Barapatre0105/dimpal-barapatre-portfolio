@@ -47,3 +47,6 @@ backend/chroma_data/
 **/__pycache__/
 *.pyc
 *.pyo
+
+# Personal secrets file
+my_secrets_DO_NOT_SHARE.txt
