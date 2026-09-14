@@ -44,7 +44,7 @@ def query_gemini(prompt: str):
         print(f"Gemini API Error: {str(e)}")
         return None
 
-def query_huggingface(prompt: str, model_id: str = "HuggingFaceH4/zephyr-7b-beta"):
+def query_huggingface(prompt: str, model_id: str = "mistralai/Mistral-7B-Instruct-v0.2"):
     """Query Hugging Face Inference API for text generation"""
     if not HF_API_KEY:
         return None
@@ -52,7 +52,7 @@ def query_huggingface(prompt: str, model_id: str = "HuggingFaceH4/zephyr-7b-beta
     api_url = f"https://api-inference.huggingface.co/models/{model_id}"
     headers = {"Authorization": f"Bearer {HF_API_KEY}"}
     
-    formatted_prompt = f"<|system|>\nYou are a helpful AI assistant.</s>\n<|user|>\n{prompt}</s>\n<|assistant|>\n"
+    formatted_prompt = f"<s>[INST] You are a helpful AI assistant. {prompt} [/INST]"
     
     payload = {
         "inputs": formatted_prompt,
