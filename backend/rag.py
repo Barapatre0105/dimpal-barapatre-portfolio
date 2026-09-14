@@ -2,23 +2,27 @@ import os
 import re
 import chromadb
 from chromadb.config import Settings
-from sentence_transformers import SentenceTransformer
+import chromadb.utils.embedding_functions as embedding_functions
 import pypdf
 
 # Initialize ChromaDB client (local file-based)
 CHROMA_DATA_PATH = os.path.join(os.path.dirname(__file__), "chroma_data")
 client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
 
-# Use sentence-transformers for local embedding (CPU optimized)
-print("Loading Embedding Model (CPU Optimized)...")
-embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-print("Embedding Model Loaded.")
+# Use HuggingFace API for embeddings to save RAM on Render
+print("Configuring HuggingFace API Embedding Function...")
+hf_token = os.getenv("HUGGINGFACE_API_KEY")
+huggingface_ef = embedding_functions.HuggingFaceEmbeddingFunction(
+    api_key=hf_token,
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
+print("Embedding Function Configured.")
 
 def get_or_create_collection(name="portfolio_collection"):
-    return client.get_or_create_collection(name=name)
+    return client.get_or_create_collection(name=name, embedding_function=huggingface_ef)
 
 def get_or_create_pdf_collection():
-    return client.get_or_create_collection(name="uploaded_pdf_collection")
+    return client.get_or_create_collection(name="uploaded_pdf_collection", embedding_function=huggingface_ef)
 
 def extract_text_from_ts(filepath):
     """Simple extractor to grab strings from the TS data files."""
@@ -64,10 +68,8 @@ def initialize_rag():
                 metadatas.append({"source": "mangesh_portfolio.txt"})
             
     if docs:
-        print(f"Embedding {len(docs)} chunks into ChromaDB from text file...")
-        embeddings = embedding_model.encode(docs).tolist()
+        print(f"Embedding {len(docs)} chunks into ChromaDB from text file via HuggingFace API...")
         collection.add(
-            embeddings=embeddings,
             documents=docs,
             metadatas=metadatas,
             ids=ids
@@ -76,11 +78,10 @@ def initialize_rag():
 
 def query_rag(query_text: str, n_results: int = 2):
     collection = get_or_create_collection()
-    query_embedding = embedding_model.encode([query_text]).tolist()
     
     # Return 2 most relevant chunks
     results = collection.query(
-        query_embeddings=query_embedding,
+        query_texts=[query_text],
         n_results=n_results
     )
     
@@ -115,9 +116,7 @@ def ingest_pdf(pdf_path: str):
                 ids.append(f"page{page_num}_{i}")
                 
     if docs:
-        embeddings = embedding_model.encode(docs).tolist()
         collection.add(
-            embeddings=embeddings,
             documents=docs,
             ids=ids
         )
@@ -129,9 +128,8 @@ def query_pdf_rag(query_text: str, n_results: int = 3):
     if collection.count() == 0:
         return ""
     
-    query_embedding = embedding_model.encode([query_text]).tolist()
     results = collection.query(
-        query_embeddings=query_embedding,
+        query_texts=[query_text],
         n_results=n_results
     )
     
