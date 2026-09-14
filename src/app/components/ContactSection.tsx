@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Globe, Code, Phone, Loader2 } from "lucide-react";
+import { Mail, Globe, Code, Loader2 } from "lucide-react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -53,10 +53,6 @@ export default function ContactSection() {
               <a href="mailto:sambaremangesh123@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-[#00f0ff] transition-colors">
                 <div className="p-3 bg-[#111] rounded-full border border-gray-700"><Mail size={20} /></div>
                 <span>sambaremangesh123@gmail.com</span>
-              </a>
-              <a href="tel:+917219548968" className="flex items-center gap-4 text-gray-300 hover:text-[#00f0ff] transition-colors">
-                <div className="p-3 bg-[#111] rounded-full border border-gray-700"><Phone size={20} /></div>
-                <span>+91 7219548968</span>
               </a>
               <a href="https://www.linkedin.com/in/mangesh-n-sambare-526ab91b5" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-[#b026ff] transition-colors">
                 <div className="p-3 bg-[#111] rounded-full border border-gray-700"><Globe size={20} /></div>
