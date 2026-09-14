@@ -66,7 +66,7 @@ export default function AboutSection() {
                 alt="Mangesh Sambare"
                 fill
                 sizes="176px"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
 
