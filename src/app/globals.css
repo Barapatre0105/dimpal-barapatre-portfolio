@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ededed;
+  --color-neon-blue: #00f0ff;
+  --color-neon-purple: #b026ff;
+}
+
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+:root {
+  --background: #000a1f;
+  --foreground: #ededed;
+}
+
+body {
+  background: linear-gradient(135deg, #001f4d 0%, #00040a 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ensure canvas doesn't scroll */
+canvas {
+  touch-action: none;
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00040a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(176, 38, 255, 0.6);
+}
+
+/* Hide scrollbar class for clean overflow areas */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animated Mesh Gradient Background */
+.mesh-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(to bottom right, #000a1f, #00040a);
+  overflow: hidden;
+}
+
+.mesh-blob {
+  position: absolute;
+  filter: blur(100px);
+  border-radius: 50%;
+  animation: float 20s infinite alternate ease-in-out;
+  opacity: 0.15;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(100px, 50px) scale(1.2); }
+  100% { transform: translate(-50px, 100px) scale(0.9); }
+}
+
+.mesh-blob-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #00f0ff; }
+.mesh-blob-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: #b026ff; animation-delay: -5s; }
+.mesh-blob-3 { top: 40%; left: 30%; width: 40vw; height: 40vw; background: #0044ff; animation-delay: -10s; }
