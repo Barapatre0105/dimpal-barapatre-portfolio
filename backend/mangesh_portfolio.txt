@@ -2,14 +2,16 @@ Mangesh Sambare
 sambaremangesh123@gmail.com · +91-7219548968
 
 SUMMARY
-Results-driven AI/ML Engineer with 2+ years of hands-on experience designing and deploying scalable Python applications for NLP, deep learning, and real-world AI solutions. Strong expertise in FastAPI-based model deployment, LLM integration, ETL pipelines, and REST API development.
+Data Scientist & Data Science Trainer with 2.8+ years of experience in Machine Learning, Deep Learning, NLP, and Data Analytics. Skilled in Python, SQL, Transformers, LLMs, RAG, LangChain, LangGraph, AI Agents, and Generative AI, with hands-on experience building real-world AI solutions and end-to-end projects.
+Mentored 1000+ students and professionals through practical, project-based learning, both online and offline. Currently focused on building GenAI and Agentic AI applications using modern LLM frameworks and AI technologies.
+Over 15+ Machine Learning, NLP, and GenAI Projects completed.
 
 EXPERIENCE
 Data Science Trainer
 SkillEcted by JSSAV Edu. Pvt. Ltd.
 Jan 2026 – Present
 - Delivered instructor-led training in Python, SQL, Advanced Excel, Power BI, Tableau, Statistics, Machine Learning, Deep Learning, NLP, Transformers, and Generative AI.
-- Mentored 200+ students by providing technical guidance, resolving complex coding issues, and supporting end-to-end project development.
+- Mentored 1000+ students and professionals by providing technical guidance, resolving complex coding issues, and supporting end-to-end project development.
 - Guided learners in building real-world AI solutions, including LLMs, RAG applications, AI Chatbots, Predictive Analytics, Recommendation Systems, and Machine Learning models.
 - Conducted technical enablement sessions for Sales and Business Development teams on Data Analytics, Business Analytics, AI, and Data Science solutions.
 - Designed hands-on assignments, capstone projects, coding assessments, and interview preparation programs to develop industry-ready Data Science professionals.
@@ -60,12 +62,26 @@ Kamla Nehru College
 2016 – 2020 · Nagpur
 
 SKILLS
-Programming Languages: Python
-Frameworks & Libraries: FastAPI · scikit-learn · TensorFlow · CNN · RNN · LSTM · NLP · Transformers · Hugging Face
-Databases: MySQL · Vector Databases (ChromaDB / FAISS)
-Data Manipulation & Analysis: Pandas · NumPy
-Deployment & Tools: Model Deployment · Git · Uvicorn · Render · Power BI · Excel
-Other Skills: Project Management · Client Communication · Web Scraping · Selenium · BeautifulSoup
+
+Generative AI & LLM Engineering:
+- Build and deploy AI-powered applications with LLMs, RAG and agents.
+- Skills: Generative AI, LLMs, RAG, AI Agents, LangChain, LangGraph, Prompt Engineering, Embeddings, Vector Databases (ChromaDB / FAISS), Hugging Face, LLM APIs.
+
+Machine Learning, Deep Learning, NLP & Data Science:
+- From data preparation to advanced AI models, combining machine learning, deep learning and NLP for intelligent solutions.
+- Python Libraries: Python, Pandas, NumPy, Scikit-learn.
+- Machine Learning Models: XGBoost, Random Forest, K-Means, DBSCAN.
+- Data Science: EDA, Feature Engineering, Data Preprocessing, Statistics.
+- Deep Learning & NLP: Deep Learning, NLP, Transformers, Sentence Transformers, LSTM, Text Embeddings, Semantic Search, Text Classification, Sequence Modeling, CNN, MLP, TensorFlow, Keras.
+
+Data & Business Analytics:
+- Work with structured data and create meaningful analytics solutions.
+- Databases: SQL, MySQL, PostgreSQL, SQLite, Data Modeling.
+- Visualization & Tools: Power BI, Tableau, Advanced Excel, DAX, Power Query.
+- Analytics: Data Analytics, Business Analytics.
+
+Deployment & General Tools: 
+- Model Deployment, Git, FastAPI, Uvicorn, Render, Project Management, Client Communication, Web Scraping, Selenium, BeautifulSoup.
 
 CERTIFICATIONS
 Data Science Bootcamp — iNeuron
