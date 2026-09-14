@@ -59,7 +59,16 @@ export default function AboutSection() {
               Open to Opportunities
             </div>
 
-
+            {/* Profile photo */}
+            <div className="relative w-44 h-44 rounded-full overflow-hidden border-4 border-[#1a2333] shadow-[0_0_25px_rgba(0,240,255,0.3)]">
+              <Image
+                src="/profile.jpg"
+                alt="Mangesh Sambare"
+                fill
+                sizes="176px"
+                className="object-cover"
+              />
+            </div>
 
             {/* Name */}
             <div className="text-center">
