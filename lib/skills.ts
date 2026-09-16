@@ -8,41 +8,20 @@ export interface SkillCategory {
 export const skills: SkillCategory[] = [
   {
     id: "01",
-    category: "Generative AI & LLM Engineering",
-    description: "Build and deploy AI-powered applications with LLMs, RAG and agents.",
-    skills: [
-      "Generative AI", "LLMs", "RAG",
-      "AI Agents", "LangChain", "LangGraph",
-      "Prompt Engineering", "Embeddings",
-      "Vector Databases", "Hugging Face",
-      "LLM APIs"
-    ]
+    category: "Programming & Machine Learning",
+    description: "Developing robust algorithms and predictive models to extract patterns and solve complex problems.",
+    skills: ["Python", "SQL", "Scikit-learn", "Random Forest", "XGBoost", "Logistic Regression", "Decision Trees", "Pandas", "NumPy"]
   },
   {
     id: "02",
-    category: "Machine Learning, Deep Learning, NLP & Data Science",
-    description: "From data preparation to advanced AI models, combining machine learning, deep learning and NLP for intelligent solutions.",
-    skills: [
-      "Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost",
-      "Random Forest", "K-Means", "DBSCAN", "EDA",
-      "Feature Engineering", "Data Preprocessing", "Statistics",
-      "Machine Learning", "Deep Learning", "NLP", "Transformers",
-      "Sentence Transformers", "LSTM", "Text Embeddings",
-      "Semantic Search", "Text Classification", "Sequence Modeling",
-      "CNN", "MLP", "TensorFlow", "Keras"
-    ]
+    category: "AI & Natural Language Processing",
+    description: "Building intelligent agents and NLP systems that understand text and automate workflows.",
+    skills: ["Artificial Intelligence", "NLP", "Generative AI", "LangChain", "AI Agents", "Semantic Search", "Tokenization", "Lemmatization"]
   },
   {
     id: "03",
-    category: "Data & Business Analytics",
-    description: "Work with structured data and create meaningful analytics solutions.",
-    skills: [
-      "SQL", "MySQL", "PostgreSQL",
-      "SQLite", "Data Modeling",
-      "Power BI", "Tableau",
-      "Advanced Excel", "DAX",
-      "Power Query", "Data Analytics",
-      "Business Analytics"
-    ]
+    category: "Data Science & Visualization",
+    description: "Transforming raw data into actionable insights through robust analysis and interactive dashboards.",
+    skills: ["EDA", "Feature Engineering", "Power BI", "Tableau", "MySQL", "PostgreSQL", "FastAPI", "Streamlit", "REST APIs"]
   }
 ];

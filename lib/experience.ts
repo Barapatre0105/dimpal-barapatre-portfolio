@@ -1,55 +1,60 @@
 export interface Experience {
   id: string;
   year: string;
+  type: string;
   role: string;
   company: string;
   location: string;
-  type: string;
   detailsTitle: string;
   bullets: string[];
 }
 
 export const experiences: Experience[] = [
   {
-    id: "exp-1",
-    year: "Jan 2026 – Present",
-    role: "Data Science Trainer",
-    company: "JSSAV Edu. Pvt. Ltd.",
+    id: "1",
+    year: "May 2026 – Present",
+    type: "Full Time",
+    role: "Software Engineer",
+    company: "Sambhav AI & Tech Services",
     location: "Nagpur, India",
-    type: "Full-Time · 8+ Months",
-    detailsTitle: "Teaching & Mentoring & AI Solutions Developer",
+    detailsTitle: "Key Responsibilities & Achievements",
     bullets: [
-      "Delivered instructor-led training in Python, Machine Learning, Deep Learning, NLP, Transformers, and Generative AI.",
-      "Mentored 1000+ students and guided them in building real-world AI solutions including LLMs, RAG applications, and AI chatbots.",
-      "Designed structured learning paths and hands-on projects to bridge the gap between theory and industry requirements."
+      "Worked on Python development, web scraping, data processing, API integration, and database management across Logistics, Data Library, Real Estate, and UAE Classifieds projects.",
+      "Developed and maintained backend/frontend workflows, UI/UX, data synchronization, authentication/OTP, and application deployment.",
+      "Performed data validation, competitor research, workflow design, API research, and document verification analysis.",
+      "Followed Agile/SDLC practices, including requirement analysis, testing, client communication, MOM/JDR preparation, and project documentation."
     ]
   },
   {
-    id: "exp-2",
-    year: "Aug 2024 – Oct 2025",
-    role: "Junior Data Scientist & Project Mentor",
-    company: "Affordable AI Technology",
-    location: "Nagpur, India",
-    type: "Full-Time · 1 yr 3 mos",
-    detailsTitle: "AI Solutions & Mentorship",
+    id: "2",
+    year: "July 2025 – January 2026",
+    type: "Full Time",
+    role: "Data Analyst",
+    company: "Yess Infotech",
+    location: "Pune, India",
+    detailsTitle: "Key Responsibilities & Achievements",
     bullets: [
-      "Led client-based AI projects involving NLP and time series forecasting.",
-      "Designed and deployed an AI-powered healthcare chatbot to automate query handling.",
-      "Mentored new employees on machine learning deployment workflows."
+      "Performed data cleaning, transformation, exploratory data analysis, and visualization on 100K+ row datasets using Python, Pandas, NumPy, and MySQL.",
+      "Developed optimized SQL queries for data extraction, filtering, aggregation, and multi-table joins to support data analysis and business reporting.",
+      "Developed interactive COVID-19 dashboards using Power BI and Tableau, analyzing 200K+ data points across 15+ regions.",
+      "Built a Mobile Sales Dashboard for Motorola, analyzing 500+ product SKUs, regional revenue, product performance, and monthly sales KPIs, reducing insight turnaround time by 30%.",
+      "Designed structured Excel dashboards using Pivot Tables, dynamic charts, and slicers to enable self-service reporting for business stakeholders."
     ]
   },
   {
-    id: "exp-3",
-    year: "Aug 2023 – Mar 2024",
-    role: "Data Analytics Intern",
-    company: "Softronix Software Services Pvt. Ltd.",
+    id: "3",
+    year: "July 2024 – January 2025",
+    type: "Internship",
+    role: "Data Analyst Intern",
+    company: "Accenture",
     location: "Nagpur, India",
-    type: "Full-Time · 8 Months",
-    detailsTitle: "Data Pipeline & Analytics",
+    detailsTitle: "Key Responsibilities & Achievements",
     bullets: [
-      "Automated product data extraction using Selenium and BeautifulSoup, reducing manual effort by 90%.",
-      "Designed a Flask-based data pipeline for automated data ingestion and preprocessing.",
-      "Worked on data cleaning, analysis, and visualization for business insights."
+      "Processed and cleaned 5M+ social media records using Python, Pandas, and SQL to identify high-performing content categories, engagement patterns, and operational bottlenecks.",
+      "Built and evaluated Machine Learning models using Random Forest and XGBoost to forecast engagement trends, improving reporting accuracy by 30%.",
+      "Applied data preprocessing, feature engineering, and model evaluation techniques to improve machine learning pipeline performance.",
+      "Performed exploratory data analysis to identify patterns, trends, and actionable insights from large-scale datasets.",
+      "Developed interactive Power BI dashboards and KPI reports to support leadership-level decision-making and business strategy."
     ]
   }
 ];

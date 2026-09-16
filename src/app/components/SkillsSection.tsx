@@ -149,7 +149,7 @@ export default function SkillsSection() {
           </div>
           
           <div className="text-gray-400 font-mono text-sm relative z-10 self-end md:self-center">
-            — Mangesh Sambare
+            — Dimpal Barapatre
           </div>
         </motion.div>
 

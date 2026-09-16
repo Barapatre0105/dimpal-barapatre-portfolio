@@ -148,7 +148,7 @@ export default function ExperienceSection() {
           </div>
           
           <div className="text-gray-400 font-mono text-sm relative z-10 self-end md:self-center whitespace-nowrap">
-            — Mangesh Sambare
+            — Dimpal Barapatre
           </div>
         </motion.div>
 

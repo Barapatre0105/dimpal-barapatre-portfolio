@@ -51,18 +51,18 @@ export default function HeroSection({ activeNode, setActiveNode }: Props) {
             variants={{ hidden: { opacity: 0, x: -30 }, visible: { opacity: 1, x: 0 } }}
             className="text-6xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-white mb-2 leading-[0.9] tracking-tighter"
           >
-            Mangesh<br />
+            Dimpal<br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00f0ff] to-[#3a7bd5]">
-              Sambare
+              Barapatre
             </span>
           </motion.h1>
           
           <motion.div variants={{ hidden: { opacity: 0, x: -30 }, visible: { opacity: 1, x: 0 } }} className="mt-6 mb-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">
-              Data Science Trainer <span className="text-[#00f0ff]">→</span>
+              Data Scientist <span className="text-[#00f0ff]">→</span>
             </h2>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#00f0ff]">
-              GenAI & Agentic AI Developer
+              Machine Learning Engineer
             </h2>
           </motion.div>
 

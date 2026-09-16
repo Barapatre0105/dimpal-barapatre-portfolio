@@ -1,0 +1,96 @@
+DIMPAL BARAPATRE 
+DATA SCIENTIST | MACHINE LEARNING ENGINEER | AI/ML ENGINEER 
+Nagpur, India | +91-7499247049 | dimplebarapatre2018@gmail.com | LinkedIn: linkedin.com/in/dimpal-barapatre-250745423/ | GitHub 
+
+PROFESSIONAL SUMMARY 
+Results-driven Data Scientist and Machine Learning Engineer with hands-on experience in Machine Learning (ML), Artificial 
+Intelligence (AI), Natural Language Processing (NLP), Predictive Modeling, and Data Science. Proficient in Python, SQL, Scikit-learn, 
+Pandas, NumPy, Random Forest, and XGBoost for data preprocessing, exploratory data analysis, feature engineering, model 
+development, evaluation, and deployment. Experienced in building end-to-end machine learning solutions, working with large-scale 
+datasets, and transforming complex data into actionable insights. Hands-on experience with Generative AI, LangChain, AI agents, 
+semantic search, automated data processing pipelines, and REST APIs. Strong analytical and problem-solving skills with a focus on 
+developing scalable AI-driven solutions for real-world business problems. 
+
+TECHNICAL SKILLS 
+Programming & Data: Python, SQL, Pandas, NumPy 
+Machine Learning: Scikit-learn, Random Forest, XGBoost, Logistic Regression, Decision Trees, Predictive Modeling, Classification 
+AI & NLP: Artificial Intelligence, Natural Language Processing (NLP), Tokenization, Lemmatization, Generative AI, LangChain, AI 
+Agents, Semantic Search 
+Data Science: Exploratory Data Analysis (EDA), Data Preprocessing, Data Cleaning, Feature Engineering, Model Evaluation, 
+Hyperparameter Tuning 
+Data Visualization: Power BI, Tableau, Matplotlib, Seaborn, Dashboard Development 
+Databases & Deployment: MySQL, PostgreSQL, ETL Pipelines, Data Modeling, Streamlit, FastAPI, Flask, REST APIs 
+Tools: Git, GitHub, Jupyter Notebook, VS Code 
+
+PROFESSIONAL EXPERIENCE 
+Sambhav AI & Tech Services | Software Engineer | May 2026 –| Nagpur, India 
+• Worked on Python development, web scraping, data processing, API integration, and database management across Logistics, Data 
+Library, Real Estate, and UAE Classifieds projects. 
+• Developed and maintained backend/frontend workflows, UI/UX, data synchronization, authentication/OTP, and application deployment. 
+• Performed data validation, competitor research, workflow design, API research, and document verification analysis. 
+• Followed Agile/SDLC practices, including requirement analysis, testing, client communication, MOM/JDR preparation, and project 
+documentation. 
+
+Yess Infotech | Data Analyst | July 2025 – January 2026 | Pune, India 
+• Performed data cleaning, transformation, exploratory data analysis, and visualization on 100K+ row datasets using Python, Pandas, 
+NumPy, and MySQL. 
+• Developed optimized SQL queries for data extraction, filtering, aggregation, and multi-table joins to support data analysis and business 
+reporting. 
+• Developed interactive COVID-19 dashboards using Power BI and Tableau, analyzing 200K+ data points across 15+ regions. 
+• Built a Mobile Sales Dashboard for Motorola, analyzing 500+ product SKUs, regional revenue, product performance, and monthly sales 
+KPIs, reducing insight turnaround time by 30%. 
+• Designed structured Excel dashboards using Pivot Tables, dynamic charts, and slicers to enable self-service reporting for business 
+stakeholders. 
+
+Accenture | Data Analyst Intern | July 2024 – January 2025 | Nagpur, India 
+• Processed and cleaned 5M+ social media records using Python, Pandas, and SQL to identify high-performing content categories, 
+engagement patterns, and operational bottlenecks. 
+• Built and evaluated Machine Learning models using Random Forest and XGBoost to forecast engagement trends, improving reporting 
+accuracy by 30%. 
+• Applied data preprocessing, feature engineering, and model evaluation techniques to improve machine learning pipeline performance. 
+• Performed exploratory data analysis to identify patterns, trends, and actionable insights from large-scale datasets. 
+• Developed interactive Power BI dashboards and KPI reports to support leadership-level decision-making and business strategy. 
+
+PROJECTS 
+Classified Research & Data Library Portal 
+Python | FastAPI | PostgreSQL | Generative AI | LangChain | AI Agents 
+• Developed a centralized research and data management platform using Python, FastAPI, PostgreSQL, React.js, and REST APIs. 
+• Built automated data processing pipelines using Python and Pandas to transform scraped and Excel data into structured datasets. 
+• Integrated Generative AI, LangChain, Gemini, and ChromaDB to support market insights, competitor analysis, feature recommendations, 
+and semantic search capabilities. 
+
+Bank Churn Prediction and Customer Data Analysis 
+Python | Machine Learning | EDA | Feature Engineering | XGBoost 
+• Analyzed 10,000+ bank customer records to identify key customer churn indicators. 
+• Built and compared Logistic Regression, Decision Tree, Random Forest, and XGBoost classification models. 
+• Performed hyperparameter tuning and model evaluation, achieving 87% accuracy and a 0.91 AUC-ROC score. 
+• Applied SMOTE and feature engineering to improve minority-class recall by 18%. 
+
+Sentiment Analysis of Amazon Alexa Reviews 
+Python | NLP | Machine Learning | Random Forest | XGBoost | Streamlit 
+• Developed an NLP-based sentiment classification model achieving 97% accuracy using Random Forest and XGBoost algorithms. 
+• Processed 3,000+ customer reviews using tokenization, lemmatization, text cleaning, and feature extraction. 
+• Performed EDA and feature engineering to improve model performance and prediction accuracy. 
+• Deployed the trained machine learning model using Streamlit for real-time sentiment analysis. 
+
+COVID-19 Data Insights Dashboard 
+Power BI | Tableau | Data Analysis | EDA | KPI Analysis 
+• Developed interactive dashboards analyzing COVID-19 case trends, recoveries, fatalities, and regional growth patterns using 200K+ data 
+points. 
+• Performed trend analysis and KPI reporting to transform complex data into actionable insights. 
+
+Music Store Data Analysis 
+MySQL | SQL | Data Analysis 
+• Designed and analyzed relational databases and wrote optimized SQL queries. 
+• Analyzed revenue trends, customer behavior, and product performance to generate actionable business insights. 
+
+CERTIFICATIONS 
+• HackerRank SQL Certificate – HackerRank | 2026 
+• Data Analytics and Visualization – Accenture | 2025 
+• Generative AI Mastermind – Outskill | 2025 
+• Full Stack Python Data Science Internship – FirstBit Solutions | 2024 
+• Power BI Skills Course – Satish Dhawale | 2024 
+
+EDUCATION 
+Master of Science (Electronics) | RTMNU Campus, Maharashtra | 2021 – 2023 | CGPA: 6.41 / 10 
+Bachelor of Science (Physics, Mathematics, Electronics) | LAD College, Nagpur | 2018 – 2021 | Percentage: 61.40% 

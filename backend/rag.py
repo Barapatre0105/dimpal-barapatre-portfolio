@@ -39,25 +39,29 @@ def initialize_rag():
         
     collection = get_or_create_collection()
         
-    txt_path = os.path.join(os.path.dirname(__file__), "mangesh_portfolio.txt")
+    txt_path = os.path.join(os.path.dirname(__file__), "dimpal_portfolio.txt")
     
-    docs = []
+    if not os.path.exists(txt_path):
+        print(f"File not found: {txt_path}")
+        return
+        
+    with open(txt_path, "r", encoding="utf-8") as f:
+        text = f.read()
+
+    # Simple chunking by double newlines (paragraphs)
+    paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+    
+    chunks = []
     ids = []
     metadatas = []
-    
-    if os.path.exists(txt_path):
-        with open(txt_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Split into logical sections by double newlines
-        raw_chunks = content.split('\n\n')
-        
-        for i, chunk in enumerate(raw_chunks):
-            if len(chunk.strip()) > 10:
-                docs.append(chunk.strip())
-                ids.append(f"portfolio_{i}")
-                metadatas.append({"source": "mangesh_portfolio.txt"})
+    for i, p in enumerate(paragraphs):
+        # If paragraph is too long, we could chunk it further, but for a resume it's usually fine.
+        if len(p) > 10:
+            chunks.append(p)
+            ids.append(f"portfolio_{i}")
+            metadatas.append({"source": "dimpal_portfolio.txt"})
             
+    docs = chunks
     if docs:
         print(f"Embedding {len(docs)} chunks into ChromaDB from text file natively...")
         try:

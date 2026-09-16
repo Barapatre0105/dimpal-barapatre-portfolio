@@ -1,4 +1,4 @@
-# Mangesh-AI-Portfolio-Data-Scientist-AI-ML-Generative-AI
+# Dimpal-AI-Portfolio-Data-Scientist-AI-ML-Generative-AI
 
 This is my personal AI Portfolio website built with Next.js, React, Tailwind CSS, and Three.js!
 

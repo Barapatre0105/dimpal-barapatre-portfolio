@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-xl font-bold text-white tracking-wider flex items-center gap-2 group">
           <span className="text-[#00f0ff] group-hover:animate-pulse">&lt;</span>
-          Mangesh
+          Dimpal
           <span className="text-[#b026ff] group-hover:animate-pulse">/&gt;</span>
         </a>
         <div className="hidden md:flex gap-2">

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mangesh Sambare | Data Scientist & AI Developer",
-  description: "Portfolio of Mangesh Sambare — Data Scientist, Data Science Trainer, and GenAI/Agentic AI Developer specializing in LLMs, RAG, LangChain, NLP, and Machine Learning.",
+  title: "Dimpal Barapatre | Data Scientist & AI Developer",
+  description: "Portfolio of Dimpal Barapatre — Data Scientist and Machine Learning Engineer specializing in NLP, Generative AI, and Predictive Modeling.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

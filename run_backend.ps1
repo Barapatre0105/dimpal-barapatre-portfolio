@@ -1,4 +1,4 @@
-Write-Host "Initializing Mangesh AI Backend..." -ForegroundColor Cyan
+Write-Host "Initializing Dimpal AI Backend..." -ForegroundColor Cyan
 
 $backendDir = ".\backend"
 $venvDir = "$backendDir\venv"

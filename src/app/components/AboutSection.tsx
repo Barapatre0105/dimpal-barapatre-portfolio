@@ -8,14 +8,14 @@ import { Mail, Send, GraduationCap, Code2, Users } from "lucide-react";
 const stats = [
   {
     icon: <GraduationCap size={28} />,
-    value: "2.8+",
+    value: "3+",
     label: "Years Experience",
     sub: "Training & Projects",
     color: "#00f0ff",
   },
   {
     icon: <Code2 size={28} />,
-    value: "15+",
+    value: "5+",
     label: "Projects Completed",
     sub: "ML | NLP | GenAI",
     color: "#b026ff",
@@ -62,8 +62,8 @@ export default function AboutSection() {
             {/* Profile photo */}
             <div className="relative w-44 h-44 rounded-full overflow-hidden border-4 border-[#1a2333] shadow-[0_0_25px_rgba(0,240,255,0.3)]">
               <Image
-                src="/profile.jpg"
-                alt="Mangesh Sambare"
+                src="/profile.png"
+                alt="Dimpal Barapatre"
                 fill
                 sizes="176px"
                 className="object-cover object-top"
@@ -73,11 +73,11 @@ export default function AboutSection() {
             {/* Name */}
             <div className="text-center">
               <h3 className="text-xl font-bold">
-                <span className="text-white">Mangesh </span>
-                <span className="text-[#00f0ff]">Sambare</span>
+                <span className="text-white">Dimpal </span>
+                <span className="text-[#00f0ff]">Barapatre</span>
               </h3>
-              <p className="text-gray-400 text-sm mt-1">Data Science Trainer &amp; Junior Data Scientist</p>
-              <p className="text-[#b026ff] text-xs mt-1">Aspiring GenAI &amp; Agentic AI Developer</p>
+              <p className="text-gray-400 text-sm mt-1">Data Scientist &amp; ML Engineer</p>
+              <p className="text-[#b026ff] text-xs mt-1">AI/ML Engineer</p>
             </div>
 
             {/* Social icons — all inline SVG, no lucide */}
@@ -98,13 +98,7 @@ export default function AboutSection() {
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
               </a>
-              {/* YouTube */}
-              <a href="https://www.youtube.com/@LearnCode_Mangesh" target="_blank" rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-red-600/10 border border-red-600/30 flex items-center justify-center text-red-500 hover:bg-red-600/20 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
-              </a>
+
               {/* Email */}
               <a href={`mailto:${profile.email}`}
                 className="w-9 h-9 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 flex items-center justify-center text-[#00f0ff] hover:bg-[#00f0ff]/20 transition-colors">
@@ -146,10 +140,10 @@ export default function AboutSection() {
             {/* Bio paragraphs */}
             <div className="space-y-4">
               <p className="text-gray-300 leading-relaxed text-[15px]">
-                Data Scientist &amp; Data Science Trainer with <span className="text-[#00f0ff] font-bold">2.8+ years</span> of experience in Machine Learning, Deep Learning, NLP, and Data Analytics. Skilled in Python, SQL, Transformers, LLMs, RAG, LangChain, LangGraph, AI Agents, and Generative AI, with hands-on experience building real-world AI solutions and end-to-end projects.
+                Results-driven Data Scientist and Machine Learning Engineer with hands-on experience in Machine Learning (ML), Artificial Intelligence (AI), Natural Language Processing (NLP), Predictive Modeling, and Data Science. Proficient in Python, SQL, Scikit-learn, Pandas, NumPy, Random Forest, and XGBoost for data preprocessing, exploratory data analysis, feature engineering, model development, evaluation, and deployment.
               </p>
               <p className="text-gray-300 leading-relaxed text-[15px]">
-                Mentored <span className="text-[#00f0ff] font-bold">1000+ students</span> and professionals through practical, project-based learning. Currently focused on building <span className="text-[#b026ff] font-semibold">GenAI</span> and <span className="text-[#b026ff] font-semibold">Agentic AI</span> applications using modern LLM frameworks and AI technologies.
+                Experienced in building end-to-end machine learning solutions, working with large-scale datasets, and transforming complex data into actionable insights. Hands-on experience with Generative AI, LangChain, AI agents, semantic search, automated data processing pipelines, and REST APIs. Strong analytical and problem-solving skills with a focus on developing scalable AI-driven solutions for real-world business problems.
               </p>
             </div>
 

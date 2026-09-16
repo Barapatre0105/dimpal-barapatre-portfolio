@@ -8,7 +8,7 @@ import axios from "axios";
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{role: 'user' | 'bot', content: string}[]>([
-    { role: "bot", content: "Hi! I'm Mangesh AI ✨\nI'm your personal AI assistant for Mangesh's portfolio. Ask me anything about his projects, skills, experience, or anything else!" }
+    { role: "bot", content: "Hi! I'm Dimpal AI ✨\nI'm your personal AI assistant for Dimpal's portfolio. Ask me anything about his projects, skills, experience, or anything else!" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -80,7 +80,7 @@ export default function ChatBot() {
             <div className="px-6 pt-5 pb-3 flex flex-col gap-1 relative border-b border-[#1a2333]/50">
               <div className="flex justify-between items-center w-full">
                 <div className="text-[26px] font-black flex items-center gap-1 tracking-tight">
-                  <span className="text-[#00f0ff]">Mangesh</span>
+                  <span className="text-[#00f0ff]">Dimpal</span>
                   <span className="text-[#b026ff]">AI</span>
                   <Sparkles size={20} className="text-[#b026ff] ml-1" />
                 </div>
@@ -102,7 +102,7 @@ export default function ChatBot() {
                   {/* Bot Avatar */}
                   {msg.role === 'bot' && (
                     <div className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white bg-[#030712] border-2 border-[#00f0ff] shadow-[0_0_15px_rgba(0,240,255,0.4)] relative mt-1 text-lg">
-                      MJ
+                      DB
                       <div className="absolute -bottom-2 -right-2 text-[#b026ff]">
                         <Sparkles size={16} fill="currentColor" />
                       </div>
@@ -120,7 +120,7 @@ export default function ChatBot() {
                          {msg.content.split('\n').map((line, idx) => (
                            <div key={idx} className={idx === 0 ? "font-bold text-[17px] mb-3 text-white" : ""}>
                              {idx === 0 ? (
-                               <>Hi! I'm <span className="text-[#00f0ff]">Mangesh</span> <span className="text-[#b026ff]">AI</span> ✨</>
+                               <>Hi! I'm <span className="text-[#00f0ff]">Dimpal</span> <span className="text-[#b026ff]">AI</span> ✨</>
                              ) : line}
                            </div>
                          ))}
@@ -135,7 +135,7 @@ export default function ChatBot() {
               {/* Loading indicator */}
               {loading && (
                 <div className="flex w-full justify-start items-start gap-4">
-                  <div className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white bg-[#030712] border-2 border-[#00f0ff] shadow-[0_0_15px_rgba(0,240,255,0.4)] mt-1 text-lg">MJ</div>
+                  <div className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white bg-[#030712] border-2 border-[#00f0ff] shadow-[0_0_15px_rgba(0,240,255,0.4)] mt-1 text-lg">DB</div>
                   <div className="bg-[#0a0f1c] border border-[#b026ff]/30 shadow-lg rounded-[24px] rounded-bl-sm p-5 flex gap-1 items-center">
                     <div className="flex gap-1.5">
                       <div className="w-2 h-2 bg-[#00f0ff] rounded-full animate-bounce"></div>
@@ -176,7 +176,7 @@ export default function ChatBot() {
                   type="text" 
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder="Ask Mangesh AI..."
+                  placeholder="Ask Dimpal AI..."
                   className="w-full bg-[#0a0f1c] border border-[#00f0ff]/20 rounded-full py-4 pl-14 pr-14 text-gray-200 text-[15px] focus:outline-none focus:border-[#00f0ff]/60 transition-colors shadow-inner placeholder-gray-500"
                 />
                 <button 

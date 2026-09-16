@@ -1,67 +1,98 @@
 export interface Project {
+  id: string;
   title: string;
-  category: string;
   description: string;
+  category: string;
   technologies: string[];
-  githubUrl: string;
-  demoUrl: string;
+  githubUrl?: string;
+  demoUrl?: string;
+  highlights: string[];
 }
 
 export const projects: Project[] = [
   {
-    title: "RAG-Powered Organizational QA Assistant",
-    category: "RAG",
-    description: "A CPU-optimized Retrieval-Augmented Generation (RAG) assistant designed for organizational QA. Built to efficiently process and query internal documents without requiring expensive GPU infrastructure.",
-    technologies: ["RAG", "LangChain", "LLM", "Vector DB"],
-    githubUrl: "https://github.com/mangeshsam/RAG-Powered-Organizational-QA-Assistant-CPU-Optimized-",
-    demoUrl: "#"
+    id: "1",
+    title: "Classified Research & Data Library Portal",
+    description: "A centralized research and data management platform with automated pipelines and Generative AI integration.",
+    category: "LLM / AI Agents",
+    technologies: ["Python", "FastAPI", "PostgreSQL", "Generative AI", "LangChain", "AI Agents", "React.js"],
+    githubUrl: "https://github.com/Barapatre0105",
+    demoUrl: "#",
+    highlights: [
+      "Developed a centralized research and data management platform using Python, FastAPI, PostgreSQL, React.js, and REST APIs.",
+      "Built automated data processing pipelines using Python and Pandas to transform scraped and Excel data into structured datasets.",
+      "Integrated Generative AI, LangChain, Gemini, and ChromaDB to support market insights, competitor analysis, feature recommendations, and semantic search capabilities."
+    ]
   },
   {
-    title: "Generative AI Hub",
-    category: "LLM",
-    description: "A comprehensive collection of Generative AI applications and experiments, showcasing advanced prompt engineering, model integration, and creative AI solutions.",
-    technologies: ["Generative AI", "Transformers", "LLM", "Python"],
-    githubUrl: "https://github.com/mangeshsam/Genrative-AI",
-    demoUrl: "#"
+    id: "2",
+    title: "Bank Churn Prediction and Customer Data Analysis",
+    description: "Machine learning pipeline to predict customer churn based on historical bank customer records.",
+    category: "Machine Learning",
+    technologies: ["Python", "Machine Learning", "EDA", "Feature Engineering", "XGBoost", "Random Forest"],
+    githubUrl: "https://github.com/Barapatre0105",
+    demoUrl: "#",
+    highlights: [
+      "Analyzed 10,000+ bank customer records to identify key customer churn indicators.",
+      "Built and compared Logistic Regression, Decision Tree, Random Forest, and XGBoost classification models.",
+      "Performed hyperparameter tuning and model evaluation, achieving 87% accuracy and a 0.91 AUC-ROC score.",
+      "Applied SMOTE and feature engineering to improve minority-class recall by 18%."
+    ]
   },
   {
-    title: "AI Healthcare Chatbot",
-    category: "LLM",
-    description: "Developed an intelligent healthcare assistant using NLP and transformer-based architecture. Deployed using FastAPI for real-time interaction and integrated a database for conversation logging.",
-    technologies: ["FastAPI", "NLP", "Transformers", "LLM", "Python"],
-    githubUrl: "#",
-    demoUrl: "#"
+    id: "3",
+    title: "Sentiment Analysis of Amazon Alexa Reviews",
+    description: "NLP-based sentiment classification model deployed with Streamlit for real-time review analysis.",
+    category: "NLP",
+    technologies: ["Python", "NLP", "Machine Learning", "Random Forest", "XGBoost", "Streamlit"],
+    githubUrl: "https://github.com/Barapatre0105/Sentiment-Analysis-of-Amazon-Alexa-Reviews",
+    demoUrl: "#",
+    highlights: [
+      "Developed an NLP-based sentiment classification model achieving 97% accuracy using Random Forest and XGBoost algorithms.",
+      "Processed 3,000+ customer reviews using tokenization, lemmatization, text cleaning, and feature extraction.",
+      "Performed EDA and feature engineering to improve model performance and prediction accuracy.",
+      "Deployed the trained machine learning model using Streamlit for real-time sentiment analysis."
+    ]
   },
   {
-    title: "Fashion Item Classification",
-    category: "Computer Vision",
-    description: "Developed a deep learning model using Convolutional Neural Networks (CNN) to classify fashion images from the Fashion MNIST dataset, achieving 92% test accuracy.",
-    technologies: ["TensorFlow", "Keras", "CNN", "Python"],
-    githubUrl: "#",
-    demoUrl: "#"
+    id: "4",
+    title: "COVID-19 Data Insights Dashboard",
+    description: "Interactive data visualization dashboard analyzing COVID-19 trends and KPIs.",
+    category: "Data Analysis",
+    technologies: ["Power BI", "Tableau", "Data Analysis", "EDA"],
+    githubUrl: "https://github.com/Barapatre0105/COVID-19-Data-Insights-Dashboard",
+    demoUrl: "#",
+    highlights: [
+      "Developed interactive dashboards analyzing COVID-19 case trends, recoveries, fatalities, and regional growth patterns using 200K+ data points.",
+      "Performed trend analysis and KPI reporting to transform complex data into actionable insights."
+    ]
   },
   {
-    title: "Sentiment Analysis on E-commerce Reviews",
-    category: "Deep Learning",
-    description: "Developed an LSTM-based deep learning model to classify product reviews, achieving 92.5% test accuracy. Integrated the model with a Flask web app for real-time predictions.",
-    technologies: ["LSTM", "TensorFlow", "Flask", "Python"],
-    githubUrl: "#",
-    demoUrl: "#"
+    id: "5",
+    title: "Music Store Data Analysis",
+    description: "Relational database analysis to generate actionable business insights for a music store.",
+    category: "Data Analysis",
+    technologies: ["MySQL", "SQL", "Data Analysis"],
+    githubUrl: "https://github.com/Barapatre0105/Music-Store-Data-Analysis",
+    demoUrl: "#",
+    highlights: [
+      "Designed and analyzed relational databases and wrote optimized SQL queries.",
+      "Analyzed revenue trends, customer behavior, and product performance to generate actionable business insights."
+    ]
   },
   {
-    title: "Flipkart Product Feedback Analysis",
-    category: "Data & NLP",
-    description: "Scraped 5,000+ product reviews from Flipkart using Selenium and BeautifulSoup. Performed sentiment analysis using LSTM to determine product perception and satisfaction levels.",
-    technologies: ["Selenium", "BeautifulSoup", "LSTM", "Python"],
-    githubUrl: "#",
-    demoUrl: "#"
-  },
-  {
-    title: "Image Dataset Acquisition & Analysis",
-    category: "Data Engineering",
-    description: "Developed an automated image scraper using Selenium and BeautifulSoup to collect and curate high-resolution image datasets tailored to specific Google search queries.",
-    technologies: ["Selenium", "Pandas", "Python", "Data Automation"],
-    githubUrl: "#",
-    demoUrl: "#"
+    id: "6",
+    title: "Wine Quality Prediction Using Machine Learning",
+    description: "Machine learning model to predict wine quality based on physicochemical tests and attributes.",
+    category: "Machine Learning",
+    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Data Analysis", "Random Forest"],
+    githubUrl: "https://github.com/Barapatre0105/Wine-Quality-Prediction-Using-Machine-Learning",
+    demoUrl: "#",
+    highlights: [
+      "Conducted exploratory data analysis (EDA) on wine datasets to identify correlations between chemical properties and quality ratings.",
+      "Developed and evaluated multiple classification models including Random Forest and Logistic Regression.",
+      "Performed feature engineering and scaling to optimize model accuracy and reduce overfitting.",
+      "Achieved high predictive accuracy, allowing for automated quality assessment."
+    ]
   }
 ];

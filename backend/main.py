@@ -15,7 +15,7 @@ from rag import initialize_rag, query_rag, ingest_pdf, query_pdf_rag
 import tempfile
 import shutil
 
-app = FastAPI(title="Mangesh Sambare AI Portfolio Backend")
+app = FastAPI(title="Dimpal Barapatre AI Portfolio Backend")
 
 # Enable CORS for frontend
 app.add_middleware(
@@ -109,37 +109,34 @@ class SentimentRequest(BaseModel):
     text: str
 
 @app.post("/chat")
-async def chat_endpoint(req: ChatRequest):
-    context = query_rag(req.message)
+async def chat_endpoint(request: ChatRequest):
+    context = query_rag(request.message)
     
-    prompt = f"""You are Mangesh AI, the virtual assistant for Mangesh Sambare's portfolio.
-Answer the following question about Mangesh based ONLY on the provided context. Be professional, concise, and conversational.
-Do not just output raw data; understand the context and answer properly.
+    prompt = f"""You are Dimpal AI, the virtual assistant for Dimpal Barapatre's portfolio.
+Answer the following question about Dimpal based ONLY on the provided context. Be professional, concise, and conversational.
 
-Context from Mangesh's Text File:
+Question: {request.message}
+
+Context from Dimpal's Text File:
 {context}
+"""
 
-Question: {req.message}
-Answer:"""
-
-    response_text = None
-    
-    # Priority 1: Gemini (Since HF is blocked via DNS)
-    if GEMINI_API_KEY:
-        response_text = query_gemini(prompt)
-        
-    # Priority 2: Hugging Face (If Gemini fails or is missing)
-    if not response_text and HF_API_KEY:
-        response_text = query_huggingface(prompt)
-        
-    # Priority 3: Fallback (If both APIs are blocked or fail)
-    if not response_text:
-        if not context.strip():
-            response_text = "I couldn't find any relevant information in Mangesh's portfolio file."
+    try:
+        # Use generative-ai library (gemini-2.5-flash)
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+        )
+        response_text = response.text
+    except Exception as e:
+        print(f"Gemini API Error: {e}")
+        # Fallback to direct context return
+        if not context:
+            response_text = "I couldn't find any relevant information in Dimpal's portfolio file."
         else:
-            snippets = [c.strip() for c in context.split("---") if c.strip()]
-            formatted_snippets = "\n\n".join([f"• {snippet}" for snippet in snippets[:2]])
-            response_text = f"I am unable to reach the AI engine to summarize this for you. However, here is the exact data I found from Mangesh's portfolio file:\n\n{formatted_snippets}"
+            snippets = context.split("\n---\n")
+            formatted_snippets = "\n\n".join([f"• {s.strip()}" for s in snippets if s.strip()])
+            response_text = f"I am unable to reach the AI engine to summarize this for you. However, here is the exact data I found from Dimpal's portfolio file:\n\n{formatted_snippets}"
             
     return {"reply": response_text}
 
