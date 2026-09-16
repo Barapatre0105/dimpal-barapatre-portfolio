@@ -8,9 +8,9 @@ import { Mail, Send, GraduationCap, Code2, Users } from "lucide-react";
 const stats = [
   {
     icon: <GraduationCap size={28} />,
-    value: "3+",
+    value: "1.7",
     label: "Years Experience",
-    sub: "Training & Projects",
+    sub: "Professional Experience",
     color: "#00f0ff",
   },
   {
@@ -20,13 +20,7 @@ const stats = [
     sub: "ML | NLP | GenAI",
     color: "#b026ff",
   },
-  {
-    icon: <Users size={28} />,
-    value: "1000+",
-    label: "Students Mentored",
-    sub: "Online & Offline",
-    color: "#b026ff",
-  },
+
   {
     icon: <span className="text-2xl font-black">∞</span>,
     value: "∞",

@@ -12,7 +12,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     id: "1",
-    year: "May 2026 – Present",
+    year: "May 2026 – Present (5 mos)",
     type: "Full Time",
     role: "Software Engineer",
     company: "Sambhav AI & Tech Services",
@@ -27,7 +27,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "2",
-    year: "July 2025 – January 2026",
+    year: "July 2025 – January 2026 (7 mos)",
     type: "Full Time",
     role: "Data Analyst",
     company: "Yess Infotech",
@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "3",
-    year: "July 2024 – January 2025",
+    year: "July 2024 – January 2025 (7 mos)",
     type: "Internship",
     role: "Data Analyst Intern",
     company: "Accenture",

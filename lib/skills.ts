@@ -16,7 +16,7 @@ export const skills: SkillCategory[] = [
     id: "02",
     category: "AI & Natural Language Processing",
     description: "Building intelligent agents and NLP systems that understand text and automate workflows.",
-    skills: ["Artificial Intelligence", "NLP", "Generative AI", "LangChain", "AI Agents", "Semantic Search", "Tokenization", "Lemmatization"]
+    skills: ["Artificial Intelligence", "NLP", "Generative AI", "LangChain", "LangGraph", "LLM", "RAG", "Prompt Engineering", "Chatbot Developer", "Agentic AI", "Semantic Search"]
   },
   {
     id: "03",
