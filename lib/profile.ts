@@ -7,6 +7,7 @@ export interface Profile {
   email: string;
   linkedin: string;
   github: string;
+  location: string;
 }
 
 export const profile: Profile = {
