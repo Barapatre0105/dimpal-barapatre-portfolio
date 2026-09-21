@@ -26,17 +26,12 @@ export default function ExperienceSection() {
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         
         {/* Header Section */}
-        <div className="text-center mb-24 relative">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-[1px] w-8 bg-gray-600"></div>
-            <p className="text-gray-400 font-mono text-sm tracking-[0.2em] uppercase">Experience</p>
-            <div className="h-[1px] w-8 bg-gray-600"></div>
-          </div>
-          
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Experience <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] to-[#b026ff]">Timeline</span>
+        <div className="mb-24 md:text-center relative">
+          <h2 className="text-3xl font-bold text-white mb-4 flex items-center md:justify-center gap-4">
+            <span className="text-[#00f0ff] font-mono text-xl">04.</span> Experience
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
+          <div className="w-24 h-1 bg-gradient-to-r from-[#00f0ff] to-[#b026ff] md:mx-auto rounded-full"></div>
+          <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
             A journey of continuous learning, real-world problem solving, and building impactful AI & data solutions.
           </p>
         </div>
