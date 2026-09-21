@@ -51,21 +51,14 @@ export default function SkillsSection() {
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         
         {/* Header Section */}
-        <div className="text-center mb-16 relative">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-[1px] w-12 bg-gradient-to-l from-gray-500 to-transparent"></div>
-            <p className="text-gray-400 font-mono text-sm tracking-[0.2em] uppercase">My Skills</p>
-            <div className="h-[1px] w-12 bg-gradient-to-r from-gray-500 to-transparent"></div>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Turning Skills into <span className="text-[#00f0ff]">Smarter</span> <span className="text-[#b026ff]">Solutions</span>
+        <div className="mb-16 md:text-center relative">
+          <h2 className="text-3xl font-bold text-white mb-4 flex items-center md:justify-center gap-4">
+            <span className="text-[#00f0ff] font-mono text-xl">02.</span> My Skills
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
+          <div className="w-24 h-1 bg-gradient-to-r from-[#00f0ff] to-[#b026ff] md:mx-auto rounded-full"></div>
+          <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
             A focused set of technologies and skills I use to solve real-world problems in AI, data and analytics.
           </p>
-
-
         </div>
 
         {/* Cards Grid */}
